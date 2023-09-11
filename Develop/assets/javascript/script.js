@@ -46,7 +46,7 @@ for (let i = 0; i < passwordLength; i++) {
   password += selectedChars.charAt(randomIndex);
   }
 
-  return password;
+  return password
 
 }
 
