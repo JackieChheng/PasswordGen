@@ -24,6 +24,23 @@ const includeUppercase = confirm("Include uppercase characters?");
 const includeNumbers = confirm("Include number?");
 const includeSpecialChars = confirm("Include special characters?");
 
+// Creates password based on user's character set
+let selectedChars = lowercaseChars;
+
+if (includeUppercase) {
+  selectedChars += uppercaseChars;
+}
+
+if (includeNumbers) {
+  selectedChars += numberChars;
+}
+
+if (includeSpecialChars) {
+  selectedChars += specialCharsChars;
+}
+
+let password = '';
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
