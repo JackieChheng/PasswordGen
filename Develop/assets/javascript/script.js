@@ -7,6 +7,12 @@ const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numberChars = '0123456789';
 const specialChars = '<>*(_^%$#@!&+)-=?'
 
+// Combines all characteristics based on user
+const allChars = lowercaseChars + uppercaseChars + numberChars + specialChars;
+
+//Password length prompt
+const passwordLength = prompt("Enter desired password length(between 8 and 128):");
+
 
 
 
