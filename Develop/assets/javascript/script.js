@@ -13,7 +13,16 @@ const allChars = lowercaseChars + uppercaseChars + numberChars + specialChars;
 //Password length prompt
 const passwordLength = prompt("Enter desired password length(between 8 and 128):");
 
+//Checks if user entered valid length
+if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+  alert("Please enter valid password between 8 and 128")
+  return "";
+}
 
+// Prompts if user wants to use certain characteristics in password
+const includeUppercase = confirm("Include uppercase characters?");
+const includeNumbers = confirm("Include number?");
+const includeSpecialChars = confirm("Include special characters?");
 
 
 // Get references to the #generate element
