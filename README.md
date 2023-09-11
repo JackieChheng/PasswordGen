@@ -9,11 +9,9 @@ hard password that won't be easily hacked into. I learned throughout this entire
 
 When you click generate, four prompts should pop up indicating certain length and character sets based on user. This then creates a password.
 
-```md
 
 ![Password Generator](./Develop/assets/images/Website.png)
 
-```
 
 ## Credit
 
