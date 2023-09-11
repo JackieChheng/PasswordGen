@@ -1,7 +1,7 @@
 // Assignment code here
 
 // Function to generate password
-function generatePassword()
+function generatePassword() {
 const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
 const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numberChars = '0123456789';
@@ -36,10 +36,19 @@ if (includeNumbers) {
 }
 
 if (includeSpecialChars) {
-  selectedChars += specialCharsChars;
+  selectedChars += specialChars;
 }
 
 let password = '';
+
+for (let i = 0; i < passwordLength; i++) {
+  const randomIndex = Math.floor(Math.random() * selectedChars.length);
+  password += selectedChars.charAt(randomIndex);
+  }
+
+  return password;
+
+}
 
 
 // Get references to the #generate element
